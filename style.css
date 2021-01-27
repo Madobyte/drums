@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(/assets/photos/background.jpg) no-repeat fixed center;
+    background-size: cover;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    position: relative;
+    top: 50vh;
+}
+.drum {
+    height: 50px;
+    background-color: crimson;
+}
