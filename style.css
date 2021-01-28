@@ -1,20 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    color: black;
 }
 body {
-    background: url(/assets/photos/background.jpg) no-repeat fixed center;
+    background: url(./assets/photos/background.jpg) no-repeat fixed center;
     background-size: cover;
 }
 section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 10px;
-    position: relative;
-    top: 50vh;
+    grid-template-columns: repeat(9, 5rem);
+    gap: 1rem;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
 }
 .drum {
-    height: 50px;
-    background-color: crimson;
+    height: 5rem;
+    text-align: center;
+    padding-top: 1.8rem;
+    transition: all 0.2s;
+    background-color: rgba(255, 215, 0, 0.5);
+    border: 5px solid rgb(220, 20, 60);
+}
+.playing {
+    transform: scale(1.05);
+    background-color: rgba(255, 215, 0, 1);
+    border-color: rgba(220, 20, 60, 0.5);
+}
+
+@media screen and (max-width: 70rem) {
+    section {
+        grid-template-columns: repeat(3, 5rem);
+    }
 }
