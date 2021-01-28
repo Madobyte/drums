@@ -11,10 +11,19 @@ body {
     background: url(./assets/photos/background.jpg) no-repeat fixed center;
     background-size: cover;
 }
+h2 {
+    font-size: 3rem;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 0 0 10px white;
+    text-align: center;
+}
 section {
     display: grid;
     grid-template-columns: repeat(9, 5rem);
-    gap: 1rem;
+    gap: 0.5rem;
     justify-content: center;
     align-content: center;
     height: 100vh;

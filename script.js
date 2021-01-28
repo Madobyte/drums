@@ -1,7 +1,10 @@
 function drumSet() {
+    const title = document.createElement('h2');
+    title.innerText = 'Drums by madobyte';
     const section = document.createElement('section');
     section.id = "drum-kit";
-    document.body.prepend(section)
+    document.body.prepend(section);
+    document.body.prepend(title);
     for (element in data) {
         const drumEl = document.createElement('button');
         drumEl.classList.add(data[element].name);
