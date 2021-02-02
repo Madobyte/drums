@@ -1,12 +1,21 @@
-Reflection on this fun project:
+# Drums Project
+## This project is a part of The Odin Project Curriculum
+**Technologies used:**
+- HTML5
+- CSS3
+    -
+- Vanill Javascript
+    -
+
+## Dev's Reflection
 
 I started this project to learn and practice DOM manipulation using vanilla Javascript.
 
 If you see the code, the HTML code is very minimal. It is a boilerplate of HTML5. I just linked both CSS and JS script inside this HTML file.
 
-The CSS file is very minimal as well. I used it for basic styling. I implemented CSS grid to manipulate the bahavior of the drum tiles. I tried doing CSS grid with repeat(auto-fit, minmax()), but the GUI did not look good when the drum tiles were cut off. Instead, I used media queries. 
+The CSS file is very minimal as well. I used it for basic styling. I implemented CSS grid to manipulate the bahavior of the drum tiles. I tried doing CSS grid with `repeat(auto-fit, minmax())`, but the GUI did not look good when the drum tiles were cut off. Instead, I used media queries. 
 
-I plan on learning CSS preprocessors (such as SASS) and implementing naming standard such as BEM.
+I plan on learning CSS preprocessors (such as SASS) and implementing naming standards such as BEM.
 
 Since this project focuses on learning and practicing DOM manipulation, the Javascript file is the longest. 
 
@@ -20,22 +29,24 @@ It was the first time I handled audio files. The first problem I encountered wit
 
 Lastly, I wanted it to look more dynamic. When a drum tile is clicked, it should visually respond to the command. So, I added the 'playing' class that has a transition. One problem, however, is I cannot dynamically add and remove the 'playing' class. So, I added an 'transitionend' eventlistener that triggers the removeClass function.
 
-What I want to learn more
+## What the Dev want to learn more about
 
 I want to master DOM manipulation by practicing more JS. SASS and BEM are good additions, too. I want to learn writing Javascript more efficiently. The lesser the code, the better. Looking forward to more fun projects.
 
-Commits
-01/27/2021 - Initial Commit
+## Commits
+
+### 01/27/2021 - Initial Commit
 
 I pushed my first commit. The tink.wav [KeyK] was not working inside Mozilla Firefox (inside my Ubuntu virtualbox). 
 The console was throwing a warning that says:
 
-Cannot play media. No decoders for requested formats: audio/x-wav, audio/x-wav, audio/x-wav, audio/x-wav
+> Cannot play media. No decoders for requested formats: audio/x-wav, audio/x-wav, audio/x-wav, audio/x-wav
 
 I had to try it out on Google Chrome on Windows. It turns out that it is working perfectly fine.
+
 I need to work on the user interface next.
 
-01/28/2021
+### 01/28/2021
 
 Initial commit only has keyboard compatibility and an ugly UI. So I added a mouse compatibility for mobile users and a decent GUI with transitions.
 
