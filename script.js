@@ -61,10 +61,8 @@ const data = {
     'KeyL': {key: 'L', name: 'tom', sound: './assets/sounds/tom.wav'}
 }
 
-
 drumSet();
 document.addEventListener('keydown', playDrum);
 
 const keys = document.querySelectorAll('.drum');
 keys.forEach(key => key.addEventListener('transitionend',  removeClass));
-

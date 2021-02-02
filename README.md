@@ -3,9 +3,9 @@
 **Technologies used:**
 - HTML5
 - CSS3
-    -
-- Vanill Javascript
-    -
+    - CSS Grid
+    - Media Queries
+- Vanilla Javascript
 
 ## Dev's Reflection
 
