@@ -1,5 +1,6 @@
 # Drums Project
-## This project is a part of The Odin Project Curriculum
+**by M. Bambalan**
+
 **Technologies used:**
 - HTML5
 - CSS3
@@ -53,3 +54,6 @@ Initial commit only has keyboard compatibility and an ugly UI. So I added a mous
 Also, the background image is not showing on Google Chrome. It was fully working inside Mozilla Firefox. Fixed its directory by adding '.' in front.
 
 Lastly, I added a title to complete this fun project.
+
+
+**This project is a part of The Odin Project Curriculum**
