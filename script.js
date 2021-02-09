@@ -1,10 +1,7 @@
 function drumSet() {
-    const title = document.createElement('h2');
-    title.innerText = 'Drums by madobyte';
     const section = document.createElement('section');
     section.id = "drum-kit";
     document.body.prepend(section);
-    document.body.prepend(title);
     for (element in data) {
         const drumEl = document.createElement('button');
         drumEl.classList.add(data[element].name);
@@ -66,3 +63,28 @@ document.addEventListener('keydown', playDrum);
 
 const keys = document.querySelectorAll('.drum');
 keys.forEach(key => key.addEventListener('transitionend',  removeClass));
+
+const footer = document.createElement('footer');
+footer.id = "footer";
+footer.innerText = "Coded by M. Bambalan";
+const drumKit = document.getElementById('drum-kit');
+document.body.insertBefore(footer, drumKit.nextSibling);
+
+const githubIcon = document.createElement('i');
+githubIcon.classList.add('fa', 'fa-github-square');
+document.body.insertBefore(githubIcon, footer.nextSibling)
+githubIcon.addEventListener('mouseenter', () => {
+    const msg = document.createElement('div');
+    msg.classList.add('msg', 'show-msg');
+    msg.innerText = "View github repo!"
+    document.body.insertBefore(msg, githubIcon.nextSibling);
+})
+githubIcon.addEventListener('mouseleave', () => {
+    const msg = document.querySelector('.msg');
+    msg.classList.remove('show-msg');
+    msg.remove();
+})
+githubIcon.addEventListener('click', () => {
+    window.location.replace("https://github.com/Madobyte/drums");
+    window.location.href = "https://github.com/Madobyte/drums";
+})

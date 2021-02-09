@@ -5,7 +5,9 @@
 - HTML5
 - CSS3
     - CSS Grid
+    - Animations and Transitions
     - Media Queries
+    - Font Awesome
 - Vanilla Javascript
 
 ## Dev's Reflection
@@ -36,7 +38,7 @@ I want to master DOM manipulation by practicing more JS. SASS and BEM are good a
 
 ## Commits
 
-### 01/27/2021 - Initial Commit
+**01/27/2021 - Initial Commit**
 
 I pushed my first commit. The tink.wav [KeyK] was not working inside Mozilla Firefox (inside my Ubuntu virtualbox). 
 The console was throwing a warning that says:
@@ -47,7 +49,7 @@ I had to try it out on Google Chrome on Windows. It turns out that it is working
 
 I need to work on the user interface next.
 
-### 01/28/2021
+**01/28/2021**
 
 Initial commit only has keyboard compatibility and an ugly UI. So I added a mouse compatibility for mobile users and a decent GUI with transitions.
 
@@ -55,5 +57,9 @@ Also, the background image is not showing on Google Chrome. It was fully working
 
 Lastly, I added a title to complete this fun project.
 
+**02/09/2021**
+Revamped the UI. Added footer and a link to this github repo!
+
+Added FontAwesome. Added animations and transitions.
 
 **This project is a part of The Odin Project Curriculum**
